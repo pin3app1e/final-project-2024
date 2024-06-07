@@ -4,17 +4,17 @@ function handleSubmit() {
     var url = document.getElementById("urlInput").value;
     var HTMLcode =  fetchWebpage(url);
     console.log("Url ===" + url);
-    console.log("HTMLkod " + HTMLcode);
+
 }
 
 function fetchWebpage(url) {
     fetch(url)
     .then(handleResponse)
     .then(html => {
-        return(html);
+        console.log("HTMLkod " + html);
     })
     .catch(error => {
-        return(error);
+        console.error('Error:', error);
     });
 }
 

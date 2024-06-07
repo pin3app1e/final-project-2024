@@ -12,6 +12,7 @@ function fetchWebpage(url) {
     .then(handleResponse)
     .then(html => {
         console.log("HTMLkod " + html);
+        updateMainContent(html);
     })
     .catch(error => {
         console.error('Error:', error);
@@ -25,3 +26,10 @@ function handleResponse(response) {
     return response.text(); // Returnerar HTML som text
 }
 
+function updateMainContent(html) {
+    // Get the main element
+    var mainElement = document.querySelector('main');
+
+    // Set the inner HTML of the main element to the fetched HTML
+    mainElement.innerHTML = html;
+}

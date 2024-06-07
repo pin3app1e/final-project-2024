@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+header {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid orange;
+}
+.urlInput {
+    background-color: rgb(40, 40, 40);
+    width: 15%;
+    height: 40px;
+    border-radius: 100px;
+    border-color: orange;
+    color: white;
+}
+h1, h2 {
+    margin: 10px 0;
+    margin-top: 10px;
+    color: white;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+.game-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.game-list li {
+    background-color: rgb(25,25,25);
+    margin: 30px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    padding: 30px;
+    border-radius: 15px;
+    border-style: outset;
+    border-color: orange;
+    width: 300px;
+    cursor: pointer;
+}
+.game-list li:hover {
+    transform: translateY(-7.5px);
+}
+.game-list li h3 {
+    color: orange;
+}
+.game-list li p {
+    color: white;
+}
+

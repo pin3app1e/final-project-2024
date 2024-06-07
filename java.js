@@ -4,7 +4,7 @@ function handleSubmit() {
     var url = document.getElementById("urlInput").value;
     var HTMLcode =  fetchWebpage(url);
     console.log("Url ===" + url);
-    console.log("HTMLkod" + HTMLcode);
+    console.log("HTMLkod " + HTMLcode);
 }
 
 function fetchWebpage(url) {
@@ -14,7 +14,7 @@ function fetchWebpage(url) {
         return(html);
     })
     .catch(error => {
-        console.error('Error:', error);
+        return(error);
     });
 }
 

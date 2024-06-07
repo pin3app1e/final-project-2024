@@ -3,7 +3,7 @@
 function handleSubmit() {
     var url = document.getElementById("urlInput");
     var HTMLcode =  fetchWebpage(url);
-    console.log(HTMLcode);
+    console.log("HTMLkod: "+HTMLcode);
 }
 
 function fetchWebpage(url) {

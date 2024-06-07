@@ -31,5 +31,6 @@ function updateMainContent(html) {
     var mainElement = document.querySelector('main');
 
     // Set the inner HTML of the main element to the fetched HTML
-    mainElement.innerHTML = html;
+    //mainElement.innerHTML = html;
+    window.location.href = html;
 }

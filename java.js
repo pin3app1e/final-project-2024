@@ -1,7 +1,7 @@
 // java.js
 
 function handleSubmit() {
-    var url = document.getElementById.value("urlInput");
+    var url = document.getElementById("urlInput").value;
     var HTMLcode =  fetchWebpage(url);
     console.log("Url ===" + url);
     console.log("HTMLkod" + HTMLcode);

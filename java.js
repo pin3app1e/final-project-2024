@@ -1,7 +1,7 @@
 // java.js
 
 function handleSubmit(url) {
-    var url = topFrame.document.getElementById("urlInput").value;
+    //var url = topFrame.document.getElementById("urlInput").value;
     fetchWebpage(url);
     console.log("Url ===" + url);
 

@@ -7,23 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Redirected Page</h1>
-    </header>
-    <main>
-        <h2>This is the modified content</h2>
-        <div id="modifiedContent"></div>
-    </main>
-    <script>
-        // Get the modified content from localStorage
-        var modifiedContent = localStorage.getItem('modifiedContent');
-
-        // Set the modified content to the div
-        if (modifiedContent) {
-            document.getElementById('modifiedContent').innerHTML = modifiedContent;
-        } else {
-            document.getElementById('modifiedContent').innerHTML = '<p>Error loading content.</p>';
-        }
-    </script>
+    
 </body>
 </html>

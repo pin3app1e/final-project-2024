@@ -4,17 +4,59 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cool multifunktionell hemsida</title>
         <link rel="stylesheet" href="style.css">
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+            mermaid.initialize({
+                startOnLoad: true,
+                theme: 'base',
+                themeVariables: {
+                    primaryColor: '#344e41',
+                    primaryTextColor: '#ffffff',
+                }
+            });
+        </script>
     </head>
-    <body>
-        <header>
+    <body background="forest-background.jpg">
+
+        <div class="top1Text">
             <h1>Emils coola slutprojekt</h1>
-            <h2>Skriv in url till sidan du ska hämta in</h2>
-            <input type="text" class="url" id="urlInput" placeholder="Enter Url here" value="www.dn.se">
-            <button class="urlSubmit" onclick="handleSubmit()">Submit</button>
-        </header>
-        <main>
-            
-        </main>    
+        </div>
+        <div class="top2Text">
+            <h2>!OBS, fungerar inte på webbsidor med relativa länkar!</h2>
+        </div>
+
+        <div class="container">
+            <div class="smurfDiagram">
+                <div class="mermaid">
+                    sequenceDiagram
+                    participant Browser
+                    participant Smurfalizer
+                    participant Target Webserver
+                    
+                    Browser->>Smurfalizer: Request
+                    Smurfalizer->>Target Webserver: Forward Request
+                    Target Webserver-->>Smurfalizer: Response
+                    Smurfalizer-->>Browser: Response
+                </div>
+            </div>
+            <div class="smurfText">
+                <p>Smurfalizern är en spännande och innovativ webbapplikation som förvandlar vanliga webbsidor till en förtrollande
+                     Smurfvärld. Genom en avancerad algoritm omvandlas texter och bilder på webbsidorna till Smurfinspirerade versioner,
+                      där allt får en touch av den karaktäristiska blå färgtonen och de ikoniska smurfmössorna. Med Smurfalizern kan
+                       användare utforska sina favoritwebbsidor på ett helt nytt sätt, uppleva webbinnehållet med en lekfull och 
+                       charmig Smurftwist. Det är inte bara ett verktyg för Smurffans att njuta av, utan också ett underhållande och 
+                       annorlunda sätt för alla internetanvändare att upptäcka och utforska onlineinnehåll. Smurfalizern lägger till
+                        en extra dimension av glädje och kreativitet till webbupplevelsen och skapar en magisk plats där Smurftrollen
+                         tar över cyberrymden och sprider glädje till alla som besöker den.
+                </p>
+            </div>
+        </div>
+
+        <div class="Urlcontainer">
+                <input type="text" class="url" id="urlInput" placeholder="Enter Url here">
+                <button class="urlSubmit" onclick="handleSubmit()">Submit</button>
+        </div>
+
         <script src="java.js"></script>
     </body>
 </html>

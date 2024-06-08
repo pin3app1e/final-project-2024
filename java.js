@@ -28,9 +28,8 @@ function handleResponse(response) {
 
 function updateMainContent(html) {
     // Get the main element
-    //var mainElement = document.querySelector('body');
+    var mainElement = document.querySelector('main');
 
     // Set the inner HTML of the main element to the fetched HTML
-    //mainElement.innerHTML = html;
-    mainFrame.document.body.innerHtml = html;
+    mainElement.innerHTML = html;
 }
